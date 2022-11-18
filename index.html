@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+    <style>
+      /* #title {
+        background-color: bisque;
+      } */
+      /* #contents-1 {
+        border: grey 2px solid;
+      } */
+      #contents-2 {
+        background-color: darkslateblue;
+      }
+      #contents-3 {
+        background-color: cornflowerblue;
+      }
+      #contents-4 {
+        background-color: slategrey;
+      }
+      #contents-5 {
+        background-color: khaki;
+      }
+      #contents-6 {
+        background-color: mediumseagreen;
+      }
+      #article-1 {
+        background-color: mistyrose;
+      }
+      #article-1-image {
+        background-color: darkolivegreen;
+      }
+      #article-2 {
+        background-color: azure;
+      }
+      #article-2-image {
+        background-color: lightgreen;
+      }
+      .btn {
+        border-radius: 25px;
+      }
+      #contents {
+        padding: 1.5em;
+      }
+      /* #contents-1 {
+        margin: 1em 0;
+        padding: 1em;
+      } */
+      #contents-1-number {
+        color: grey;
+        opacity: 50%;
+      }
+      #contents-1-content {
+        padding-top: 0.5em;
+      }
+      #contents-1-content-title {
+        font-size: 1.2em;
+      }
+      #carousel {
+        padding: 2em 1em;
+        margin: 1em 0;
+      }
+      #carousel-left-caption {
+        padding: 0 1em;
+      }
+      #carousel-left-button {
+        margin: 1em 0;
+      }
+      #article {
+        background-color: #ebebeb;
+        padding: 1em 2em;
+      }
+      #discover-and-footer {
+        padding: 1em 2em;
+      }
+      #discover-and-footer-topic-badge-1 {
+        margin: 0.5em 0;
+      }
+      #discover-and-footer-title-subscribtion {
+        margin-top: 0.5em;
+      }
+
+      /* Tampilan Mobile */
+      @media screen and (max-width: 1400px) {
+        #carousel-right {
+          display: none;
+        }
+        #wave {
+          margin-top: -1.5rem;
+          margin-bottom: 0r-mdem;
+        }
+        #contents-1 {
+          margin: 0em 1em;
+          padding: 1em;
+        }
+      }
+
+      /* Tampilan Web */
+      @media screen and (min-width: 1400px) {
+        #carousel-left-button {
+          margin: 1em 0;
+          width: 30%;
+        }
+
+        #wave {
+          margin-top: -17.5rem;
+          margin-bottom: 0rem;
+        }
+        /* #carousel-item {
+            margin-bottom: -40px;
+          } */
+        #contents-1 {
+          /* margin: 0.5em; */
+          padding: 1em;
+        }
+      }
+    </style>
+
+    <title>Bukan Mediun</title>
+  </head>
+  <body>
+    <section id="navbar" style="background-color: #fbe192">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="medium.png" alt="" width="30" height="30" class="d-inline-block align-text-top" />
+            Bukan Mediun
+          </a>
+          <ul class="nav justify-content-end navbar-nav collapse navbar-collapse" id="navbarTogglerDemo03">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Write</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+            <button class="btn btn-secondary" type="submit">Get Started</button>
+          </ul>
+          <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div> -->
+        </div>
+      </nav>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="margin: 0rem 0rem -3rem 0rem">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3">
+                        <strong>Where good ideas find you</strong>
+                      </h1>
+                    </div>
+                    <div id="carousel-left-caption" class="row">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id neque ea blanditiis natus nobis praesentium necessitatibus repellat mollitia, commodi molestias esse iusto quidem voluptates corporis ad rem. Obcaecati,
+                        omnis similique! <a href="#">Learn More</a>
+                      </p>
+                    </div>
+                    <div id="carousel-left-button" class="row">
+                      <button class="btn btn-warning">Get Started</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="[An Kujo] Sio.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3">
+                        <strong>Where you find a lot good ideas</strong>
+                      </h1>
+                    </div>
+                    <div id="carousel-left-caption" class="row">
+                      <p>Temukan inspirasi! Web ini berisi aneka ragam tulisan yang membuatmu tergelitik dan menemukan perspektif pemikiran yang asik.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="[KORIGENGI-DeathToTotoro] Ganyu.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3">
+                        <strong>Gak iso dibanding-bandingne!</strong>
+                      </h1>
+                    </div>
+                    <div id="carousel-left-caption" class="row">
+                      <p>Everyone is unique. Membandingkan hanya akan membuatku capek, do what you love and love what you do.</p>
+                    </div>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="[KORIGENGI-Ryuzaky] Siesta.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,288L360,224L720,288L1080,256L1440,96L1440,320L1080,320L720,320L360,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <section id="trending">
+      <div class="container">
+        <div id="title" class="row">
+          <h3><img src="medium.png" alt="" width="30" height="30" class="d-inline-block align-text-top" /> Trending di Bukan Mediun</h3>
+        </div>
+        <div id="contents" class="row align-items-center">
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>01</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>02</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>03</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>04</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>05</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>06</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><img src="medium.png" alt="" width="20" height="20" class="d-inline-block align-text-top" /> Kohar in Mediun</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>How to use bootstrap for creating a website</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 13 | 10 min read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+
+    <section id="multi-section">
+      <div class="container">
+        <div class="row">
+          <div id="article" class="col-md-7">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-layout-text-sidebar-reverse"></i> Kohar in Mediun</h5>
+                    <p class="card-text-title" style="margin-bottom: 0.5em">
+                      <strong>How to use bootstrap for creating a responsive website</strong>
+                    </p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card-text row">
+                      <div class="col-md">
+                        <small class="text-muted">June 13 | 10 min read</small>
+                      </div>
+                      <div class="col-md text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="1196031.jpg" class="img-fluid rounded-start" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-layout-text-sidebar-reverse"></i> Kohar in Mediun</h5>
+                    <p class="card-text-title" style="margin-bottom: 0.5em">
+                      <strong>How to use bootstrap for creating a responsive website</strong>
+                    </p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card-text row">
+                      <div class="col-md">
+                        <small class="text-muted">June 13 | 10 min read</small>
+                      </div>
+                      <div class="col-md text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="[KORIGENGI-lemondseven] Lemonna Desktop.jpg" class="img-fluid rounded-start" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-layout-text-sidebar-reverse"></i> Kohar in Mediun</h5>
+                    <p class="card-text-title" style="margin-bottom: 0.5em">
+                      <strong>How to use bootstrap for creating a responsive website</strong>
+                    </p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card-text row">
+                      <div class="col-md">
+                        <small class="text-muted">June 13 | 10 min read</small>
+                      </div>
+                      <div class="col-md text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="[DEATHTOTOTORO] Eris Boreas.png" class="img-fluid rounded-start" alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="discover-and-footer" class="col-md">
+            <div id="discover-and-footer-title" class="row">
+              <h5><b>DISCOVER MORE OF WHAT MATTERS TO YOU</b></h5>
+            </div>
+            <div id="discover-and-footer-topic-badge" class="row align-items-center">
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 1</button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 2</button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 3</button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 4</button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 5</button>
+              </div>
+              <div id="discover-and-footer-topic-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-secondary position-relative">Topic 6</button>
+              </div>
+
+              <div class="col-6">
+                <a href="#">See all topics</a>
+              </div>
+            </div>
+            <div id="discover-and-footer-title-subscribtion" class="row">
+              <h5><b>Subscribe for more</b></h5>
+              <p>Get notified when we publish something new!</p>
+            </div>
+            <div id="discover-and-footer-form" class="row">
+              <div class="col">
+                <form class="row g-3">
+                  <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">Email</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="email@kohar.com" />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-warning" style="border-radius: 0">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr style="height: 3px; opacity: 0.5" />
+            <div id="footer" class="row align-items-center">
+              <div id="footer-help" class="col">
+                <small><strong>Help</strong></small>
+              </div>
+              <div id="footer-status" class="col">
+                <small><strong>Status</strong></small>
+              </div>
+              <div id="footer-writer" class="col">
+                <small><strong>Writer</strong></small>
+              </div>
+              <div id="footer-blog" class="col">
+                <small><strong>Blog</strong></small>
+              </div>
+              <div id="footer-privacy" class="col">
+                <small><strong>Privacy</strong></small>
+              </div>
+              <div id="footer-term" class="col">
+                <small><strong>Term</strong></small>
+              </div>
+              <div id="footer-about" class="col">
+                <small><strong>About</strong></small>
+              </div>
+            </div>
+            <div class="row text-center" style="margin-top: 0.5em">
+              <small
+                ><p>Created using <i class="bi bi-bootstrap-fill"></i> 5.0 by Kohar with <i class="bi bi-heartbreak-fill"></i></p
+              ></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
